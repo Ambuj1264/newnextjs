@@ -7,14 +7,14 @@ import React from 'react'
 
 const Organizer = () => {
     return (
-        <div>
+        <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
             <h3 className='text-[16px] font-semibold text-[#333] pb-5'>Yoga Teacher Training Course in Rishikesh, India as confident teachers with a strong and solid teaching skill set ready to begin their career in the world of Yoga.</h3>
             <p className='text-[16px] font-normal text-[#666] pb-5'>Yoga Teacher Training in India at Arogya Yoga School as confident teachers with strong and solid teaching skills, ready to start their career in yoga. They develop a unique art of teaching along with a comprehensive understanding of asana, pranayama, shatkarma, alignment, ayurveda, philosophy, anatomy, mudras, mantras and meditation. Our Yoga Alliance registered Yoga Teacher Training in India is intensive and enriching for yoga beginners to More...</p>
             <div>
                 <h3 className='font-bold text-xl p-5 px-0'>Past Events</h3>
-                <div className='flex gap-5'>
+                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5'>
                     {arr.map((item) => (
-                        <div className="max-w-sm bg-white border   shadow" key={item.id}>
+                        <div className="bg-white border shadow" key={item.id}>
                             <Image width={100} height={100} className="w-full h-auto object-contain" src="/assets/images/pastImg.png" alt="" />
                             <div className="px-5 p-3">
                                 <p className="mb-2 font-normal text-gray-700 dark:text-gray-400">{item.date}</p>
@@ -27,13 +27,11 @@ const Organizer = () => {
                                     <Rating value={item.rating}/>
                                 </div>
                             </div>
-
                         </div>
-
                     ))}
                 </div>
                 <hr />
-                <div id='review' className='px-0 p-10'>
+                <div id='review' className='px-0 p-5 sm:p-10'>
                     <h3 className='font-bold text-xl py-4 '>20 Reviews</h3>
                     <div>
                         {
@@ -56,7 +54,7 @@ const Organizer = () => {
                     </div>
                     <div className='flex justify-between items-center'>
                         <p className='text-[#666] font-medium text-[16px]'>Report this profile</p>
-                       <RightArrow/>
+                        <RightArrow/>
                     </div>
                 </div>
             </div>
@@ -65,4 +63,3 @@ const Organizer = () => {
 }
 
 export default Organizer;
-
