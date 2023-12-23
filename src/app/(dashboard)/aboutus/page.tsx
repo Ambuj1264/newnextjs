@@ -1,5 +1,6 @@
 "use client"
 import Header from '@/pages/aboutus/Header'
+import SimilarEvents from '@/pages/aboutus/SimilarEvents'
 import WorkSample from '@/pages/aboutus/WorkSample'
 import Deatils from '@/pages/aboutus/detailspage/Deatils'
 import React from 'react'
@@ -10,6 +11,8 @@ const Page = () => {
         <Header/>
         <Deatils/>
         <WorkSample/>
+        <SimilarEvents/>
+
     </div>
   )
 }

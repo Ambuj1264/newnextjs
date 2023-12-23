@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import Organizer from './organizer/Organizer';
 import { Rating } from '@/components/ui/rating/StarRating';
 import { EventsIcon } from '@/utils/svg';
+import About from './aboutSection/About';
 
 const Details = () => {
   const [isLargeScreen, setIsLargeScreen] = useState(true);
@@ -46,7 +47,7 @@ const Details = () => {
 export default Details;
 
 const tabs = [
-  { id: 'tab1', label: 'About Event', content: <p>Content for Tab 1</p> },
+  { id: 'tab1', label: 'About Event', content: <About /> },
   { id: 'tab2', label: 'Organizer', content: <Organizer /> },
 ];
 
