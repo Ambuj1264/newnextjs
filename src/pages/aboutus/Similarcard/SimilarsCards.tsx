@@ -24,13 +24,17 @@ const SimilarsCards = () => {
         </div>
 
         <hr className='my-5' />
-        <div className='flex justify-between'>
-            <p className='text-black text-3xl font-bold'>Free</p>
-            <button className="bg-[#0A84FF] gap-2 text-white font-bold py-2 px-4 rounded inline-flex items-center">
-                <Image src="/assets/images/subscriptionIcon.png" width={19} height={17} alt='icon' />
-                <span>BOOK NOW</span>
-            </button>
-        </div>
+        <div className='container mx-auto px-4 lg:mx-0 lg:px-0'>
+  <div className='flex justify-between mb-2 mr-1 lg:container lg:mx-auto lg:px-4'>
+    <p className='text-black text-3xl font-bold'>Free</p>
+    <button className="bg-[#0A84FF] gap-2 text-white font-bold py-2 px-4 rounded inline-flex items-center">
+      <Image src="/assets/images/subscriptionIcon.png" width={19} height={17} alt='icon' />
+      <span>BOOK NOW</span>
+    </button>
+  </div>
+</div>
+
+
     </div>
 </div>
   )
